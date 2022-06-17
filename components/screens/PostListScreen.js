@@ -10,7 +10,7 @@ import { StatusBar } from 'expo-status-bar';
 import Header from '../Header';
 import { StyleSheet, View } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
-import { loadPosts } from '../../utils/store';
+import { addPost, loadPosts } from '../../utils/store';
 export default ({ navigation }) => {
   const [posts, setPosts] = useState([]);
   useFocusEffect(() => {
